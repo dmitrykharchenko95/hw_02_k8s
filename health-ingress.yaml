@@ -3,7 +3,6 @@ kind: Ingress
 metadata:
   name: health-ingress
   annotations:
-    nginx.ingress.kubernetes.io/use-regex: "true"
     nginx.ingress.kubernetes.io/rewrite-target: /health
 spec:
   ingressClassName: nginx
