@@ -17,3 +17,10 @@ spec:
                 name: health-service
                 port:
                   number: 8000
+          - path: /health
+            pathType: ImplementationSpecific
+            backend:
+              service:
+                name: health-service
+                port:
+                  number: 8000
